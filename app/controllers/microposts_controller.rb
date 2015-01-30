@@ -1,5 +1,5 @@
 class MicropostsController < ApplicationController
-  before_action :set_micropost, only: [:show, :edit, :update, :destroy]
+  Digest::MD5::hexdigest(email.downcase)
 
   # GET /microposts
   # GET /microposts.json
